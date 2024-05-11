@@ -50,6 +50,34 @@ public class Snake2 extends JFrame {
 
         longitud = listaPosiciones.size();        
     }
+   public void generarComida() {
+        Random rnd = new Random();
+
+        comida.x = (rnd.nextInt(width)) + 5;
+        if((comida.x % 5) > 0) {
+            comida.x = comida.x - (comida.x % 5);
+        }
+
+        if(comida.x < 5) {
+            comida.x = comida.x + 10;
+        }
+        if(comida.x > width) {
+            comida.x = comida.x - 10;
+        }
+
+        comida.y = (rnd.nextInt(height)) + 5;
+        if((comida.y % 5) > 0) {
+            comida.y = comida.y - (comida.y % 5);
+        }    
+
+        if(comida.y > height) {
+            comida.y = comida.y - 10;
+        }
+        if(comida.y < 0) {
+            comida.y = comida.y + 10;
+        }
+
+    }
 
     public static void main(String[] args) {
         Snake2 snake1 = new Snake2();
