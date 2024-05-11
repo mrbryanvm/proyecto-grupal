@@ -78,6 +78,26 @@ public class Snake2 extends JFrame {
         }
 
     }
+   public void actualizar() {
+
+        listaPosiciones.add(0,new Point(snake.x,snake.y));
+        listaPosiciones.remove(listaPosiciones.size()-1);
+
+        for (int i=1;i<listaPosiciones.size();i++) {
+            Point point = listaPosiciones.get(i);
+            if(snake.x == point.x && snake.y  == point.y) {
+                gameOver = true;
+            }
+        }
+
+        if((snake.x > (comida.x-10) && snake.x < (comida.x+10)) && (snake.y > (comida.y-10) && snake.y < (comida.y+10))) {
+            listaPosiciones.add(0,new Point(snake.x,snake.y));
+            System.out.println(listaPosiciones.size());
+            generarComida();
+        }
+        imagenSnake.repaint();
+
+    }
 
     public static void main(String[] args) {
         Snake2 snake1 = new Snake2();
