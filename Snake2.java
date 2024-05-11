@@ -1,6 +1,16 @@
-import java.awt.Dimension;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.event.*;
 import java.awt.Toolkit;
+import java.awt.Dimension;
+import java.awt.Point;
+import java.awt.Font;
+
 import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+import java.util.ArrayList;
+import java.util.Random;
 public class Snake2 extends JFrame {
    ImagenSnake imagenSnake;
     Point snake;
