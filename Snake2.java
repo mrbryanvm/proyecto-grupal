@@ -35,11 +35,8 @@ public class Snake2 extends JFrame {
 	public class Momento extends Thread {
 		
 		private long last = 0;
-		
-		public Momento() {
-			
+		public Momento() {	
 		}
-
 		public void run() {
 			while(true) {
 				if((java.lang.System.currentTimeMillis() - last) > frequency) {
