@@ -25,13 +25,7 @@ public class Snake2 extends JFrame {
     }
 }
 
-
-
-
-
 public class Teclas extends java.awt.event.KeyAdapter {
-    private String direccion = "RIGHT"; // Suponiendo que "RIGHT" es la dirección inicial
-
     @Override
     public void keyPressed(KeyEvent e) {
         if (e.getKeyCode() == KeyEvent.VK_ESCAPE) {
@@ -52,6 +46,10 @@ public class Teclas extends java.awt.event.KeyAdapter {
             if (direccion != "UP") {
                 direccion = "DOWN";
             }
+        } else if (e.getKeyCode() == KeyEvent.VK_N) {
+            gameOver = false;
+            startGame(); // Aquí se llama al método startGame para reiniciar el juego
         }
+        // Resto del código para manejar eventos de teclado
     }
 }
