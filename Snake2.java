@@ -24,3 +24,13 @@ public class Snake2 extends JFrame {
         Snake2 snake1 = new Snake2();
     }
 }
+
+
+
+
+public class Teclas extends java.awt.event.KeyAdapter {
+    @Override
+    public void keyPressed(KeyEvent e) {
+        // Manejo de eventos de teclado
+    }
+}
