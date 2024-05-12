@@ -1,8 +1,12 @@
 # EQUIPO “LOS SKIBIDI TOILET´S”
 Bryan Vasquez Maldonado
+
 Camila Magne Hinojosa
+
 Mayra Belen Arias Grageda
+
 Matias Juan Jose Mita Senzano
+
 
 # GitFlow utilizado
 Utilizamos un enfoque básico de ramificación en Git. Cada uno de nosotros creó su propia rama a partir de la rama master principal y trabajamos en nuestras características respectivas en esas ramas individuales. Luego fusionamos nuestras ramas de vuelta a la rama master una vez que nuestras características estuvieron listas.
