@@ -28,9 +28,13 @@ public class Snake2 extends JFrame {
 
 
 
+
 public class Teclas extends java.awt.event.KeyAdapter {
     @Override
     public void keyPressed(KeyEvent e) {
-        // Manejo de eventos de teclado
+        if (e.getKeyCode() == KeyEvent.VK_ESCAPE) {
+            System.exit(0);
+        }
+        // Resto del manejo de eventos de teclado
     }
 }
